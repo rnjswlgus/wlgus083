@@ -1,0 +1,1581 @@
+@charset 'utf-8';
+@import url('notosanskr/NotoSansKR.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 10px;
+    overflow-x: hidden;
+    background-color: #f6f9f0;
+}
+
+html {}
+
+/*모달창*/
+/*more 영역: 포스터*/
+.m-post {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.post-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    width: 47.9rem;
+    height: 68.7rem;
+    background: url('../images/bigsalesimg.png') no-repeat center;
+}
+
+/*공통 영역*/
+.wrap {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 1117px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: ;
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+/*위로가기*/
+.go-top {
+    position: fixed;
+    right: 4rem;
+    bottom: 4rem;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #202b16;
+    color: #202b16;
+    font-family: 'NotoSansKR';
+    font-weight: 700;
+    line-height: 4.7;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999999;
+    background-color: rgba(255, 255, 255, 0.4);
+
+    transition: 0.3s;
+}
+
+.go-top:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* 모바일 메뉴 */
+.navi {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 45rem;
+    height: 58rem;
+    background-color: #fff;
+    padding-top: 10rem;
+    padding-left: 5rem;
+}
+
+.navi li {
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+.navi li a {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'NotoSansKR';
+    color: #272727;
+    border-bottom: 2px solid #aa9991;
+}
+
+.menubtn {
+    position: absolute;
+    top: 4.5rem;
+    right: 15rem;
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menubtn span {
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 0.3rem;
+    border-radius: 20px;
+    background: #64544c;
+    transition: all 35s;
+}
+
+.menubtn span:nth-child(1) {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menubtn span:nth-child(2) {
+    top: 1.45rem;
+    left: 0.3rem;
+    transform: translate(-50%, );
+}
+
+.menubtn span:nth-child(3) {
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menubtn:hover .navi {
+    display: block;
+}
+
+/* SCROLL */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #9e4052, #d5687c);
+}
+
+
+/*상단 영역*/
+.header {
+    position: relative;
+    display: block;
+    height: 58rem;
+    background-color: #ecf2e0;
+    z-index: 9999;
+}
+
+.visual_1 {
+    position: absolute;
+    top: 3rem;
+    left: 10rem;
+    display: block;
+}
+
+.visual_2 {
+    position: absolute;
+    top: 10rem;
+    left: 15.6rem;
+    display: block;
+}
+
+.visual_3 {
+    position: absolute;
+    top: 23.5rem;
+    left: 25rem;
+    display: block;
+}
+
+.logo {
+    position: absolute;
+    top: 3.5rem;
+    left: 16rem;
+    display: block;
+}
+
+.nav {
+    position: absolute;
+    top: 5.5rem;
+    left: 25rem;
+    display: block;
+}
+
+.depth1 {
+    position: relative;
+    display: block;
+}
+
+
+.depth1 li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 4rem;
+}
+
+.move {
+    font-family: 'NotoSansKR';
+    color: #272727;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+}
+
+.move:hover {
+    color: #54875f;
+    border-bottom: 2px solid #54875f;
+}
+
+.h-side-txt {
+    padding-left: 15.7rem;
+    padding-top: 3rem;
+}
+
+/*비주얼 영역*/
+.visual {
+    position: relative;
+    display: block;
+}
+
+/*ABOUT ME영역*/
+.about {
+    position: relative;
+    display: block;
+    height: 35rem;
+}
+
+.about .container {
+    position: relative;
+    display: block;
+}
+
+.about-tit {
+    position: absolute;
+    top: -9rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    font-family: 'NotoSansKR';
+    color: #272727;
+    font-family: 'notosanskr';
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.grass-icon {
+    position: absolute;
+    top: -9.1rem;
+    left: 37.7rem;
+    display: block;
+    width: 2.7rem;
+    height: 2.5rem;
+    background: url('../images/grass_icon.png') no-repeat;
+}
+
+.about-txt {
+    margin-top: 15rem;
+}
+
+.about-txt-2 {
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+    display: block;
+}
+
+/*프로필 영역*/
+.profile {
+    position: relative;
+    display: block;
+    height: 88rem;
+    background-color: #ecf2e0 !important;
+}
+
+.profile-base {
+    margin-left: 19rem;
+}
+
+.profile .container {
+    position: relative;
+    display: block;
+}
+
+.profile-img {
+    position: absolute;
+    top: 5.7rem;
+    left: 5.5rem;
+    display: block;
+    width: 37.6rem;
+    height: 49.5rem;
+    background: url('../images/profile_imgs.png') no-repeat !important;
+}
+
+.profile-base {
+    position: absolute;
+    left: 0rem;
+    top: 10rem;
+    display: block;
+}
+
+.profile-1 {
+    padding-top: 12rem;
+    padding-left: 32rem;
+}
+
+.profile-txt {}
+
+.txt-1 {
+    position: relative;
+    display: block;
+    width: 49.6rem;
+}
+
+.edu-2 {
+    position: absolute;
+    top: 0.4rem;
+    right: 18rem;
+    display: block;
+}
+
+.certi-1 {
+    margin-top: 10rem;
+}
+
+.certi-2 {
+    position: absolute;
+    top: -0.3rem;
+    left: 12.4rem;
+    display: block;
+}
+
+.con-1 {
+    margin-top: 6.5rem;
+}
+
+.con-2 {
+    position: absolute;
+    top: 0;
+    left: 12.2rem;
+    display: block;
+}
+
+.contact-box {
+    content: '';
+    position: absolute;
+    top: 3.8rem;
+    left: 12.1rem;
+    display: block;
+    width: 10rem;
+    height: 2.3rem;
+    background: linear-gradient(to right, #9e4052, #d5687c, #dca0ab, #f5d0d7);
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 2.6;
+    text-align: center;
+    font-weight: 700;
+}
+
+.profile-2 {
+    position: relative;
+    display: block;
+    margin-top: 6rem;
+    margin-left: 5.4rem;
+}
+
+.skill-1 {}
+
+.pos-1 {
+    margin-top: 17rem;
+}
+
+.sk-list {}
+
+.sk-list>li {
+    width: 8.5rem;
+    height: 8.5rem;
+    border: 0.6rem solid #a55463;
+    border-radius: 100%;
+    background-color: #fff;
+    float: left;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+}
+
+.sk-list>li>a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 5.8;
+    text-align: center;
+    color: #060606;
+}
+
+.p1 {
+    padding-left: 2.8rem;
+}
+
+.p2 {
+    padding-left: 3rem;
+}
+
+.p3 {
+    padding-left: 2.3rem;
+}
+
+.p4 {
+    padding-left: 2.8rem;
+}
+
+.p5 {
+    padding-left: 3.2rem;
+}
+
+.pos-list {
+    position: relative;
+    display: block;
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+}
+
+.pos-list>li {
+    color: #752032;
+    font-size: 1.3rem;
+    font-family: 'NotoSansKR';
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.pos-list>li>span {
+    color: #383837;
+    font-size: 1rem;
+}
+
+.pos-graph {
+    position: absolute;
+    top: 16.5rem;
+    right: 5rem;
+    display: block;
+}
+
+/*퍼블리싱 영역*/
+.pub {
+    position: relative;
+    display: block;
+    height: 60rem;
+    background-color: #ecf2e0;
+}
+
+.pub .container {}
+
+.about-tit-pub {
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    font-family: 'NotoSansKR';
+    color: #272727;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.grass-icon-pub {
+    position: absolute;
+    top: 6.9rem;
+    right: 27.9rem;
+    display: block;
+    width: 2.7rem;
+    height: 2.5rem;
+    background: url('../images/grass_icon.png') no-repeat;
+}
+
+.publish {
+    position: absolute;
+    top: 15rem;
+    right: -24rem;
+    display: block;
+    width: 80rem;
+    height: 40rem;
+}
+
+.swiper-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+    width: 20rem;
+    height: 40rem;
+}
+
+.pub-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pub-box:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.pub-num {
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-family: 'nanum_gothic';
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+
+    transition: 0.5s;
+}
+
+.n-salim {
+    color: #5e5a54;
+}
+
+.num-line {
+    content: '';
+    position: absolute;
+    top: 2.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 4rem;
+    height: 0.1rem;
+    background-color: #fff;
+
+    transition: 0.5s;
+}
+
+.l-salim {
+    background-color: #746f67;
+}
+
+.pub-tit {
+    position: absolute;
+    top: 10.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+
+    transition: 0.5s;
+}
+
+.t-salim {
+    color: #5e5a54;
+    text-align: center;
+}
+
+.pub-box-pc {
+    position: absolute;
+    left: 50%;
+    top: 0rem;
+    transform: translateX(-50%);
+    display: block;
+    width: 280px;
+    height: 190px;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.pub-box-pc img {
+    position: absolute;
+    top: 11rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.pub-box-desc {
+    position: relative;
+    display: block;
+    position: absolute;
+    top: 25rem;
+    left: 3.5rem;
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.pub-box-bt {
+    position: absolute;
+    left: 4.3rem;
+    top: 32rem;
+    display: block;
+    text-align: center;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.pub-bt1 {
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    display: block;
+    width: 7rem;
+    height: 2.2rem;
+    background-color: #000;
+
+    transition: 0.4s;
+}
+
+.pub-bt2 {
+    position: absolute;
+    top: 0rem;
+    left: 6rem;
+    display: block;
+    width: 7rem;
+    height: 2.2rem;
+    background-color: #000;
+
+    transition: 0.4s;
+}
+
+.pub-box-bt span {
+    font-family: 'NotoSansKR';
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 32px;
+    letter-spacing: -0.25px;
+
+    transition: 0.4s;
+}
+
+/* 배경: 이미지 영역 */
+.bg1 {
+    background: url('../images/publish_img1.png') no-repeat center;
+    background-size: cover;
+}
+
+.bg2 {
+    background: url('../images/publish_img2.png') no-repeat center;
+    background-size: cover;
+}
+
+.bg3 {
+    background: url('../images/publish_img3.png') no-repeat center;
+    background-size: cover;
+}
+
+.bg4 {
+    background: url('../images/publish_img5.png') no-repeat center;
+    background-size: cover;
+}
+
+.bg5 {
+    background: url('../images/publish_img4.png') no-repeat center;
+    background-size: cover;
+}
+
+/*hover 작동하기*/
+.pub-box:hover .pub-num {
+    top: 4rem;
+}
+
+.pub-box:hover .pub-tit {
+    top: 7.5rem;
+}
+
+.pub-box:hover .n-salim {
+    color: #fff;
+}
+
+.pub-box:hover .l-salim {
+    background-color: #fff;
+}
+
+.pub-box:hover .t-salim {
+    color: #fff;
+}
+
+.pub-box:hover .pub-box-desc li {
+    opacity: 1;
+}
+
+.pub-box:hover:before {
+    opacity: 0.8;
+}
+
+.pub-box:hover .pub-box-pc {
+    opacity: 1;
+}
+
+.pub-box:hover .pub-box-desc {
+    opacity: 1;
+}
+
+.pub-box:hover .pub-box-bt {
+    opacity: 1;
+}
+
+.pub-bt1:hover {
+    background-color: #72a114;
+}
+
+.pub-bt2:hover {
+    background-color: #72a114;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 30rem;
+    left: 7rem;
+    display: block;
+    color: #7fbba5;
+}
+
+
+.swiper-button-next {
+    position: absolute;
+    top: 36rem;
+    left: 7rem;
+    display: block;
+    color: #7fbba5;
+}
+
+/*리디자인 영역*/
+.redesign {
+    position: relative;
+    display: block;
+    height: 60rem;
+}
+
+.redesign .container {
+    position: relative;
+    display: block;
+}
+
+.about-tit-redesign {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    font-family: 'NotoSansKR';
+    color: #272727;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.grass-icon-redesign {
+    position: absolute;
+    top: 5rem;
+    left: 37.5rem;
+    display: block;
+    width: 2.7rem;
+    height: 2.5rem;
+    background: url('../images/grass_icon.png') no-repeat;
+}
+
+/*리디자인 내용 영역*/
+.redesign {
+    position: relative;
+    display: block;
+}
+
+.rede-top {
+    position: relative;
+    display: block;
+}
+
+/* 리디자인 이미지 넣는 곳 */
+.redesigns {
+    position: relative;
+    display: block;
+}
+
+.rede-left {
+    float: left;
+    padding-top: 10rem;
+    padding-left: 5rem;
+}
+
+.rede-right {
+    position: absolute;
+    top: 12rem;
+    right: 0rem;
+    display: block;
+    float: right;
+}
+
+.right-lou {
+    right: 5rem;
+}
+
+.rede-pro {
+    content: '';
+    font-family: 'NotoSansKR';
+    width: 12rem;
+    height: 3rem;
+    background-color: #e6e6e6;
+    font-size: 1.4rem;
+    letter-spacing: -0.08rem;
+}
+
+.rede-tit {
+    font-size: 2.8rem;
+    color: #332628;
+    font-family: 'NotoSansKR';
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -0.1rem;
+    text-align: left;
+}
+
+.rede-txt {
+    color: #5c5c5b;
+    font-size: 1rem;
+    font-family: 'NotoSansKr';
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.rede-list {
+    margin-top: 3rem;
+}
+
+.list-nene {
+    margin-left: 0.1rem;
+}
+
+.list-lou {
+    margin-left: 4rem;
+}
+
+.rede-list li {
+    font-family: 'NotoSansKR';
+    color: #0d0d0d;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.3rem;
+}
+
+.rede-sublist {
+    position: absolute;
+    top: 14.7rem;
+    right: 16rem;
+    display: block;
+    color: #515151;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    font-weight: 600;
+
+    text-align: left;
+}
+
+.subline-nene {
+    right: 13rem;
+}
+
+.rede-sublist li {
+    margin-top: 0.4rem;
+}
+
+.rede-bt1 {
+    margin-top: 20rem;
+    margin-left: 1.5rem;
+    background: linear-gradient(to right, #5e8944, #74b94b, #c1e4ad);
+    color: #fff;
+    font-family: 'NotoSansKR';
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.rede-bt2 {
+    margin-top: 20rem;
+    margin-left: 3rem;
+    border: 1px solid #74b94b;
+    color: #212121;
+    font-family: 'NotoSansKR';
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 2rem;
+    background-color: #fff;
+}
+
+.rede-bt2:hover {
+    background-color: #74b94b;
+    color: #fff;
+}
+
+.rede-bottom {
+    position: absolute;
+    top: 40rem;
+    left: 6rem;
+    display: block;
+}
+
+.rede-view {}
+
+.rede-view li {
+    float: left;
+}
+
+.rede-view li a {
+    margin-right: 2rem;
+}
+
+.rede-view li a:hover {
+    opacity: 0.5;
+}
+
+/*MORE영역*/
+.more {
+    position: relative;
+    display: block;
+    height: 65rem;
+    background-color: #ecf2e0 !important;
+}
+
+.about-tit-more {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    font-family: 'NotoSansKR';
+    color: #272727;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.grass-icon-more {
+    position: absolute;
+    top: 4.89rem;
+    left: 63.3rem;
+    display: block;
+    width: 2.7rem;
+    height: 2.5rem;
+    background: url('../images/grass_icon.png') no-repeat;
+}
+
+.more_modal_wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    /*display: block;*/
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999999;
+}
+
+
+.more_gnb {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    display: block;
+    width: 1400px;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #292929;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+.more_prev {
+    position: relative;
+    display: block;
+    float: left;
+
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'NotoSansKR';
+    color: #292929;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.more_next {
+    position: relative;
+    display: block;
+    float: right;
+
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'NotoSansKR';
+    color: #292929;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+.more_close {
+    position: absolute;
+    right: -58px;
+    top: 51%;
+    transform: translateY(-50%);
+    display: block;
+    width: 51px;
+    height: 50px;
+    border: 1px solid #292929;
+    cursor: pointer;
+    background: #fff;
+}
+
+.more_close:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 3.5px;
+    transform: rotate(45deg);
+    width: 80%;
+    height: 3px;
+    background-color: #292929;
+    margin-left: 2px;
+}
+
+.more_close:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 3.5px;
+    transform: rotate(-45deg);
+    width: 80%;
+    height: 3px;
+    background-color: #292929;
+    margin-left: 2px;
+}
+
+.more_modal_box {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    width: 1400px;
+    height: 800px;
+    background: #fff;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.more_con {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.more_con img {
+    /*max-width: 100%;*/
+    /*border: 1px solid #999;*/
+    margin-top: 35px;
+}
+
+.moredesign {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    padding-top: 80px;
+    padding-left: 70px;
+}
+
+.pagew {
+    padding-top: 5rem;
+}
+
+.moredesign_box1,
+.moredesign_box2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.moredesign_box1 {
+    margin-top: 65px;
+    margin-bottom: 37px;
+}
+
+.moredesign_box1 a {
+    margin-right: 5rem;
+}
+
+.moredesign_box2 {
+    margin-bottom: 50px;
+}
+
+.moredesign_box2 a {
+    margin-right: 5rem;
+}
+
+.more_box {
+    position: relative;
+    display: block;
+    width: 350px;
+    height: 350px;
+    white-space: nowrap;
+}
+
+.more_bg1 {
+    background: url('../images/m_bigsale.png') center no-repeat;
+    background-size: cover;
+}
+
+.more_bg2 {
+    background: url('../images/m_insam.png') center no-repeat;
+    background-size: cover;
+}
+
+.more_bg3 {
+    background: url('../images/more_1.png') center no-repeat;
+    background-size: cover;
+}
+
+.more_bg4 {
+    background: url('../images/m_candle.png') center no-repeat;
+    background-size: cover;
+}
+
+.more_bg5 {
+    background: url('../images/m_mylogo.png') center no-repeat;
+    background-size: cover;
+}
+
+.more_bg6 {
+    background: url('../images/m_lovepet.png') center no-repeat;
+    background-size: cover;
+}
+
+.mo_bg:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0);
+    transition: background 0.3s;
+}
+
+.more_tit1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+
+    font-size: 33px;
+    font-weight: 700;
+    color: #fff;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.more_tit2 {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    display: block;
+
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.more_tit3 {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    display: block;
+
+    font-size: 13px;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 0;
+
+    opacity: 0;
+    transition: 1s;
+}
+
+.more_small {
+    font-size: 29px;
+}
+
+.mo_bg:hover:before {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.more_box:hover .more_tit1 {
+    top: 40%;
+    opacity: 1;
+}
+
+.more_box:hover .more_tit2 {
+    top: 48%;
+    opacity: 1;
+}
+
+.more_box:hover .more_tit3 {
+    opacity: 1;
+}
+
+/*STORY영역*/
+.story {
+    position: relative;
+    display: block;
+    height: 98rem;
+}
+
+.story .container {
+    position: relative;
+    display: block;
+}
+
+.about-tit-story {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    font-family: 'NotoSansKR';
+    color: #272727;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.grass-icon-story {
+    position: absolute;
+    top: 4.8rem;
+    left: 36.5rem;
+    display: block;
+    width: 2.7rem;
+    height: 2.5rem;
+    background: url('../images/grass_icon.png') no-repeat;
+}
+
+.s-bottom {
+    padding-top: 13rem;
+}
+
+.sto-box1 {
+    position: relative;
+    display: block;
+    margin-right: 5rem;
+}
+
+.sto-left {
+    float: left;
+}
+
+.sto-right {
+    float: right;
+}
+
+.sto-right h2 {
+    font-family: 'NotoSansKR';
+    width: 15.5rem;
+    height: 2rem;
+    background-color: #bd858d;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.1rem;
+    line-height: 1.3;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.sto-right h2:before {
+    content: '';
+    position: absolute;
+    top: 4rem;
+    right: 20.8rem;
+    display: block;
+    width: 0.25rem;
+    height: 4rem;
+    background-color: #fff;
+}
+
+.sto-txt {
+    font-family: 'NotoSansKR';
+    font-size: 1rem;
+    font-weight: 500;
+    color: #807b7b;
+    line-height: 1;
+    letter-spacing: -0.07rem;
+    margin-top: 1rem;
+    padding-left: 0.3rem;
+}
+
+.sto-tit {
+    position: relative;
+    display: block;
+    font-family: 'NotoSansKR';
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #343434;
+    line-height: 1.5;
+    letter-spacing: -0.07rem;
+    margin-top: 2rem;
+}
+
+.sto_box2-left {
+    float: left;
+}
+
+.sto_box2-left h2 {
+    position: absolute;
+    top: 37rem;
+    left: 10rem;
+    display: block;
+    background-color: #6f8c7e;
+}
+
+.sto_box2-left h2:before {
+    top: 0;
+    left: 17rem;
+}
+
+.sto_box2-txt {
+    position: absolute;
+    top: 43rem;
+    left: 9rem;
+    display: block;
+    padding-left: 9.8rem;
+}
+
+.sto_box2-tit {
+    position: absolute;
+    top: 45rem;
+    left: 2rem;
+    display: block;
+    text-align: right;
+}
+
+.sto_box2-right {
+    float: right;
+    padding-top: 10rem;
+}
+
+.s-box3 {}
+
+.sto-img1 {
+    position: absolute;
+    top: 60rem;
+    left: 1.44rem;
+    display: block;
+    width: 13.2rem;
+    height: 36rem;
+    background: url('../images/sto3_1.png') no-repeat center;
+}
+
+.sto-img2 {
+    position: absolute;
+    top: 63rem;
+    left: 10.2rem;
+    display: block;
+    width: 13.2rem;
+    height: 36rem;
+    background: url('../images/sto3_2.png') no-repeat center;
+}
+
+.sto-img3 {
+    position: absolute;
+    top: 60rem;
+    left: 18.9rem;
+    display: block;
+    width: 13.2rem;
+    height: 36rem;
+    background: url('../images/sto3_3.png') no-repeat center;
+}
+
+.sto_box3-right h2 {
+    position: absolute;
+    top: 67rem;
+    right: 10rem;
+    width: 16.5rem;
+    display: block;
+}
+
+.sto_box3-right h2:before {
+    top: 0;
+    right: 18rem;
+}
+
+.sto-box3-txt {
+    position: absolute;
+    top: 73rem;
+    right: 20rem;
+    display: block;
+}
+
+.sto_box3-right h3 {
+    position: absolute;
+    top: 77.8rem;
+    left: 43.4rem;
+    display: block;
+    font-family: 'NotoSansKR';
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #343434;
+    line-height: 1.5;
+    letter-spacing: -0.07rem;
+}
+
+
+/*하단 영역*/
+.footer {
+    position: relative;
+    display: block;
+    height: 37rem;
+    background-color: #3d3d3c;
+}
+
+.footer .container {}
+
+.about-tit-foot {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    font-family: 'NotoSansKR';
+    color: #fefefe;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.grass-icon-foot {
+    position: absolute;
+    top: 4rem;
+    left: 37.2rem;
+    display: block;
+    width: 2.7rem;
+    height: 2.5rem;
+    background: url('../images/grass_icon.png') no-repeat;
+}
+
+.contact-footer {
+    padding-top: 10.5rem;
+}
+
+.contact-img {
+    margin-left: 16.5rem;
+}
+
+.contact-tit {
+    position: absolute;
+    top: 13rem;
+    right: 21rem;
+    display: block;
+}
+
+.contact-txt {
+    position: absolute;
+    right: 1rem;
+    top: 18rem;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+}
+
+.f-box a {
+    content: '';
+    position: absolute;
+    top: 26rem;
+    right: 23.6rem;
+    display: block;
+    width: 9.5rem;
+    height: 2.6rem;
+    background-color: #54906f;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 2.8;
+    text-align: center;
+}
+
+.f-box a:hover {
+    background: linear-gradient(to right, #5e8944, #74b94b, #c1e4ad);
+}
